@@ -1,0 +1,14 @@
+#insigform {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    z-index: 999;
+}
+
+#fairLabel{
+    position: absolute;
+    left: 0px;
+    top: 85px;
+    z-index: 999;
+    color: #545454;
+}
