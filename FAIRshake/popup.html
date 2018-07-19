@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAIRshake</title>
+    <style>
+        html{
+            min-width:200px;
+        }
+
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .fairness-caption {
+            text-align: center;
+        }
+
+        #fairshakeBkletLink {
+            font-family: arial, helvetica, clean, sans-serif;
+            font-size: 12px;
+            color: #337ab7;
+        }
+
+        #fairnessBkletTooltip{
+            padding-top:5px;
+        }
+    </style>
+</head>
+<body>
+<div id="fairness-bklet-wrapper">
+    <div id="fairness-bklet">
+        <div class="fairness-bklet-insig">
+        </div>
+        <div class="fairness-caption">
+            <p id="fairshakeBkletInfo"></p>
+            <a id="fairshakeBkletLink" target="_blank"></a>
+        </div>
+    </div>
+</div>
+<script src="/scripts/jquery-3.2.1.min.js"></script>
+<script src="/scripts/d3.v3.min.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
