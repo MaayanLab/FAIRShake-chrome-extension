@@ -21,16 +21,12 @@
             font-size: 12px;
             color: #337ab7;
         }
-
-        #fairnessBkletTooltip{
-            padding-top:5px;
-        }
     </style>
 </head>
 <body>
 <div id="fairness-bklet-wrapper">
     <div id="fairness-bklet">
-        <div class="fairness-bklet-insig">
+        <div class="fairness-bklet-insig" style="width:40px; height:40px; margin:0 auto; shape-rendering:crispEdges;">
         </div>
         <div class="fairness-caption">
             <p id="fairshakeBkletInfo"></p>
@@ -38,8 +34,6 @@
         </div>
     </div>
 </div>
-<script src="/scripts/jquery-3.2.1.min.js"></script>
-<script src="/scripts/d3.v3.min.js"></script>
-<script src="popup.js"></script>
+<script src="/scripts/require.js" data-main="popup.js"></script>
 </body>
 </html>
