@@ -1,6 +1,8 @@
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
     var url = tabs[0].url;
-    require(["/scripts/insignia.js","/scripts/jquery.js"],function(insignia){
+    var insignia = require("./scripts/insignia.js")
+    var jQuery = require("jquery")
+//    ],function(insignia){
         var questions = JSON.parse(jQuery.ajax({
             async: false,
             url: 'https://fairshake.cloud/api/getQ?',
@@ -50,5 +52,5 @@ chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         function notFound() {
             document.getElementById("fairshakeBkletInfo").appendChild(document.createTextNode("FAIRness data unavailable."));
         }
-    });
+//    });
 });

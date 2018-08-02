@@ -1,7 +1,7 @@
-define(function(require) {
+define('insignia', function(require) {
   return {
     build_svg: function (container, scores, metrics) {
-      require(['/scripts/d3.js'], function(d3) {
+      require(['./d3.js'], function(d3) {
         // Construct the insignia with arbitrary scores and summaries
         //
         // params:
