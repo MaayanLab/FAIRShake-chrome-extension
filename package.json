@@ -1,0 +1,25 @@
+{
+  "name": "fairshakechromeextension",
+  "version": "1.0.0",
+  "description": "A rendering of FAIR assessment scores from FAIRshake",
+  "scripts": {
+    "build": "browserify popup.js > popup.min.js"
+  },
+  "author": "Lily Wang <lw453@cornell.edu>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babelify": "^9.0.0",
+    "browserify": "^16.2.2"
+  },
+  "dependencies": {
+    "fairshakeinsignia": "file:FAIRshakeInsignia",
+    "svg-to-canvas": "^1.0.1"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
