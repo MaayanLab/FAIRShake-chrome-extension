@@ -1,7 +1,5 @@
 const insignia = require('fairshakeinsignia')
 
-function svg_to_canvas(sourceSVG, targetCanvas) {
-}
 chrome.tabs.query({
     active: true,
     currentWindow: true

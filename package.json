@@ -3,23 +3,31 @@
   "version": "1.0.0",
   "description": "A rendering of FAIR assessment scores from FAIRshake",
   "scripts": {
-    "build": "browserify popup.js > popup.min.js"
+    "build": "browserify src/popup.js -o dist/popup.min.js",
+    "deploy": "cpx \"src/**/*.{ico,png,json,html}\" dist",
+    "prepublish": "npm run build && npm run deploy"
   },
   "author": "Lily Wang <lw453@cornell.edu>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.1.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "babelify": "^9.0.0",
-    "browserify": "^16.2.2"
+    "browserify": "^16.2.2",
+    "cpx": "^1.5.0"
   },
   "dependencies": {
-    "fairshakeinsignia": "file:FAIRshakeInsignia",
-    "svg-to-canvas": "^1.0.1"
+    "fairshakeinsignia": "github:Nitrogen-DCPPC/FAIRshakeInsignia"
   },
   "browserify": {
     "transform": [
       "babelify"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
     ]
   }
 }

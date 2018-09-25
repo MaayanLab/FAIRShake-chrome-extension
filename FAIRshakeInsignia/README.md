@@ -1,2 +1,0 @@
-# FAIRshake Insignia Client Library
-
