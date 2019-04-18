@@ -18,7 +18,7 @@
     "cpx": "^1.5.0"
   },
   "dependencies": {
-    "fairshakeinsignia": "github:Nitrogen-DCPPC/FAIRshakeInsignia"
+    "fairshakeinsignia": "github:MaayanLab/FAIRshakeInsignia"
   },
   "browserify": {
     "transform": [
