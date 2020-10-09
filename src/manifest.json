@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "FAIRshake",
   "description": "Get the FAIR score and submit a FAIR assessment for any biomedical digital object right from its homepage.",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "16": "/img/icon-16.png",
     "32": "/img/icon-32.png",

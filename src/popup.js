@@ -13,7 +13,7 @@ chrome.tabs.query({
     insignia.build_svg_from_score(insigniaContainer, { url })
 
     const link = document.getElementById('fairshakeBkletLink')
-    link.setAttribute('href', 'https://fairshake.cloud/assessment/add?target__title=' + encodeURIComponent(title) +'&target__url=' + encodeURIComponent(url))
+    link.setAttribute('href', 'https://fairshake.cloud/?q=' + encodeURIComponent(url) +'&projects=1&digitalobjects=1&rubrics=1&metrics=1')
     link.style.display = 'block'
 })
 
